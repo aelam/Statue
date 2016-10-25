@@ -1,0 +1,16 @@
+PODS:
+  - Statue (0.1.0)
+
+DEPENDENCIES:
+  - Statue (from `../`)
+
+EXTERNAL SOURCES:
+  Statue:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Statue: 31dee492bf5bfe67451b9c40b35adaef1d16377b
+
+PODFILE CHECKSUM: f7346b5c39d022375440c1d95b007d5603ee5a34
+
+COCOAPODS: 1.1.1

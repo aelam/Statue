@@ -1,42 +1,23 @@
-#
-# Be sure to run `pod lib lint Statue.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'Statue'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Statue.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.summary          = 'Always get a default Value with Statue.'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+1. When you try to get value from property of an object, it might be nil, or the property is from a protocol which is not implemented in your class. then it will throw exception or give you nothing.
+    Statue tries to solve this problem.
+2. In swift, there is a Nil-coalescing Operator. not exists in OC.
+    Statue is the alternative way.
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/Statue'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+DESC
+
+  s.homepage         = 'https://github.com/aelam/Statue'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Ryan Wang' => 'wanglun02@gmail.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/Statue.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/Statue/Statue.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '7.0'
 
   s.source_files = 'Statue/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'Statue' => ['Statue/Assets/*.png']
-  # }
+  s.public_header_files = 'Pod/Classes/**/*.h'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
