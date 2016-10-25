@@ -8,6 +8,8 @@
 
 #import "NSUserDefaults+DefaultValues.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @implementation NSUserDefaults (DefaultValues)
 
 - (nullable id)objectForKey:(NSString *)defaultName defaultValue:(nullable NSString *)value {
@@ -34,7 +36,7 @@
     return retVal;
 }
 
-- (nullable NSDictionary<NSString *, id> *)dictionaryForKey:(nullable NSDictionary<NSString *, id> *)defaultName defaultValue:(nullable NSDictionary<NSString *, id> *)value {
+- (nullable NSDictionary<NSString *, id> *)dictionaryForKey:(NSString *)defaultName defaultValue:(nullable NSDictionary<NSString *, id> *)value {
     id retVal = [self dictionaryForKey:defaultName];
     if (!retVal) {
         retVal = value;
@@ -99,3 +101,6 @@
 }
 
 @end
+
+NS_ASSUME_NONNULL_END
+

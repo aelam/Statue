@@ -13,11 +13,11 @@ DESC
   s.homepage         = 'https://github.com/aelam/Statue'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Ryan Wang' => 'wanglun02@gmail.com' }
-  s.source           = { :git => 'https://github.com/Statue/Statue.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/aelam/Statue.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '7.0'
 
   s.source_files = 'Statue/Classes/**/*'
-  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'Statue/Classes/**/*.h'
 
 end

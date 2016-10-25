@@ -23,12 +23,5 @@
     return MSPropertyDoubleValue(self, aSelector, defaultValue);
 }
 
-#ifdef CGFLOAT_DEFINED
-- (CGFloat)performCGFloatSelector:(SEL)aSelector defaultValue:(CGFloat)defaultValue {
-    return MSPropertyCGFloatValue(self, aSelector, defaultValue);
-}
-#endif
-
-
 @end
 
